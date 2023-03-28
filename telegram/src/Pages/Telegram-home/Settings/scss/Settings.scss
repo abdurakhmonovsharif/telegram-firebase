@@ -1,0 +1,433 @@
+ .modal-content {
+     position: relative;
+     border-radius: 300px;
+     top: 50px;
+
+     .EditPhoneNumber {
+         padding: 0px 130px;
+
+         .header {
+             display: flex;
+             gap: 40px;
+
+             .text {
+                 font-size: 18px;
+                 margin-top: 3px;
+             }
+
+             .back-button {
+                 font-size: 22px;
+                 width: 25px;
+                 z-index: 2;
+                 height: 25px;
+                 border-radius: 50%;
+                 color: #6f869b;
+                 position: absolute;
+                 left: 10px;
+             }
+
+             .back-button:hover {
+                 color: #fff;
+                 z-index: 2;
+
+                 cursor: pointer;
+                 font-size: 20px;
+                 width: 25px;
+                 height: 25px;
+             }
+         }
+
+         .main {
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             gap: 20px;
+
+             .changeSimGif {
+                 width: 120px;
+                 height: 120px;
+             }
+
+         }
+
+     }
+
+     .log-out {
+         width: 120px;
+         position: absolute;
+         right: 40px;
+         top: 50px;
+         padding: 8px;
+         background: #11161a;
+         border-radius: 7px;
+         cursor: pointer;
+         display: flex;
+         transition: all 1.2s;
+         gap: 20px;
+         color: #fff;
+         transition: all 1.2s;
+         animation: isOpen 1000ms;
+
+         .log-out-icon {
+             font-size: 20px;
+             color: red;
+         }
+     }
+
+
+     @keyframes isOpen {
+         from {
+             transform: translateY(-100%);
+             opacity: 0.25;
+         }
+
+         to {
+             transform: translateX(0%);
+             opacity: 1;
+         }
+     }
+
+     .close-button {
+         position: absolute;
+         right: 12px;
+         color: #6f869b;
+         font-size: 24px;
+         top: 16px;
+         z-index: 7;
+
+     }
+
+
+
+     .close-button:hover {
+         position: absolute;
+         right: 12px;
+         color: #6f869b;
+         font-size: 22px;
+         cursor: pointer;
+         z-index: 7;
+         color: #fff;
+
+     }
+
+     .securityMenu {
+         .back-button {
+             font-size: 22px;
+             width: 25px;
+             height: 25px;
+             border-radius: 50%;
+             color: #6f869b;
+
+         }
+
+         .back-button:hover {
+             color: #fff;
+             cursor: pointer;
+             font-size: 20px;
+             width: 25px;
+             height: 25px;
+         }
+     }
+
+     .EditProfile {
+         min-width: 100%;
+
+         .bio-other-info {
+             display: flex;
+             padding: 0 30px;
+             flex-direction: column;
+             gap: 20px;
+
+             .other-info {
+                 .main-info {
+                     cursor: pointer;
+                     padding: 6px;
+                     display: flex;
+                     justify-content: space-between;
+
+                     .icon-father {
+                         display: flex;
+                         gap: 20px;
+                     }
+
+                     .name {
+                         font-size: 15px;
+                         color: rgb(98, 176, 207);
+                     }
+
+                     .phone-number {
+                         font-size: 15px;
+                         color: rgb(98, 176, 207);
+
+                     }
+
+                     .username {
+                         font-size: 15px;
+                         color: rgb(98, 176, 207);
+                     }
+                 }
+
+                 .main-info:hover {
+                     background: #3c454e;
+                     border-radius: 8px;
+                 }
+             }
+
+             .bio {
+                 display: flex;
+                 padding: 0px 8px;
+
+                 .bio-input {
+                     width: 100%;
+                     background: none;
+                     border: none;
+                     color: #fff;
+                     outline: none;
+                 }
+
+                 .bio-input::placeholder {
+                     color: silver;
+                 }
+
+             }
+         }
+
+         .name {
+             font-size: 20px;
+             display: flex;
+             flex-direction: column;
+             text-align: center;
+
+             .status {
+                 color: #439DB6;
+                 font-size: 1rem;
+             }
+         }
+
+
+         .profile-images {
+             display: flex;
+             position: relative;
+             flex-direction: column;
+             align-items: center;
+
+             img {
+                 border-radius: 50%;
+                 display: flex;
+                 width: 80px;
+                 height: 80px;
+             }
+
+             .ProfilePic {
+                 .gallery-image {
+                     width: 80px;
+                     height: 80px;
+                 }
+             }
+
+             .edit-images {
+                 position: absolute;
+                 left: 55%;
+                 bottom: -3px;
+                 border-radius: 50%;
+                 width: 30px;
+                 height: 30px;
+                 border: 2px solid;
+                 background: skyblue;
+                 cursor: pointer;
+
+                 .edit-images-camera {
+                     color: #fff;
+                     cursor: pointer;
+                     margin-top: 5px;
+                     margin-left: 5px;
+                 }
+             }
+
+             .image {
+                 display: flex;
+                 justify-content: center;
+
+             }
+         }
+
+         .back-button {
+             font-size: 22px;
+             width: 25px;
+             height: 25px;
+             border-radius: 50%;
+             position: absolute;
+             left: 15px;
+             z-index: 2;
+             color: #6f869b;
+
+         }
+
+         .back-button:hover {
+             color: #fff;
+             font-size: 20px;
+             width: 25px;
+             height: 25px;
+             cursor: pointer;
+         }
+     }
+
+     .modal-header {
+         background: #17212B;
+         color: #fff;
+         border: none;
+
+     }
+
+     .more-bnt {
+         background: none;
+         color: #6f869b;
+         z-index: 4;
+         border: none;
+         position: absolute;
+         right: 50px;
+         top: 18px;
+         font-size: 20px;
+     }
+
+     .more-bnt:hover {
+         background: none;
+         z-index: 4;
+         border: none;
+         color: #Fff;
+         cursor: pointer;
+         position: absolute;
+         right: 50px;
+         top: 18px;
+         font-size: 20px;
+     }
+
+     .btn-close {
+         right: 10px;
+         top: 20px;
+         color: #fff;
+         position: absolute;
+     }
+
+     .settings-text {
+         font-size: 22px;
+     }
+
+     .userInfo {
+         background: #17212B;
+         padding: 3px;
+
+
+         .header {
+             display: flex;
+
+
+
+             justify-content: center;
+             gap: 20px;
+
+             .userName {
+
+                 p {
+                     font-size: 14px;
+                     color: silver;
+
+                 }
+
+                 p:hover {
+                     cursor: pointer;
+                     font-size: 14px;
+                     text-decoration: underline;
+                 }
+             }
+
+             .user-profile-photos {
+                 position: relative;
+                 padding: 8px;
+
+                 .DemoImage {
+                     background: #FFF;
+                     border-radius: 50%;
+                     width: 80px;
+                     height: 80px;
+
+                     img {
+                         width: 80px;
+                         height: 80px;
+                     }
+                 }
+
+                 .Image {
+                     width: 50px;
+
+                     height: 50px;
+                     border-radius: 50%;
+
+                     img {
+                         text-align: center;
+                         display: flex;
+                         justify-content: center;
+                         margin: 0 auto;
+                         width: 50px;
+                         height: 50px;
+                         border-radius: 50%;
+                         scale: (1.7);
+
+                     }
+                 }
+
+
+             }
+
+             .userName-userPhonoNumber {
+                 .names {
+                     font-size: 22px;
+                 }
+
+                 .phoneNumber {
+                     font-size: 15px;
+                 }
+             }
+         }
+     }
+
+     background: #45525e;
+
+     .controls {
+         display: flex;
+         flex-direction: column;
+         gap: 15px;
+         font-size: 17px;
+
+         .soon {
+             position: absolute;
+             right: 10px;
+             cursor: auto;
+         }
+
+         .control-buttons {
+             display: flex;
+             gap: 20px;
+             cursor: pointer;
+
+             .icon-father {
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+
+
+             }
+         }
+     }
+
+
+ }
+
+ .testModal {
+     .test {
+         text-decoration-line: none;
+         text-decoration-style: none;
+         text-decoration-color: none;
+     }
+ }

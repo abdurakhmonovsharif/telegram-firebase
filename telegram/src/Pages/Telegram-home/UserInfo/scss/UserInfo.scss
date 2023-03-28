@@ -1,0 +1,229 @@
+.userInformation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 1, 0.4);
+    padding: 10px;
+    z-index: 2;
+
+    .my-modal {
+        display: flex;
+        left: 32%;
+        position: absolute;
+        width: 500px;
+        height: auto;
+        padding: 13px 18px;
+        background-color: #16202A;
+        transition: none 1.2s;
+        animation: isOpen 0.5s;
+        top: 100px;
+        border-radius: 8px;
+        flex-direction: column;
+        gap: 20px;
+        z-index: 7;
+
+        .body {
+            display: flex;
+            gap: 15px;
+            flex-direction: column;
+
+            .bio {
+                display: flex;
+                padding: 0px 105px;
+                flex-direction: column;
+
+                .bio-text {
+                    font-size: 15px;
+                    color: silver;
+                }
+
+                .bio-input {
+                    width: 100%;
+                    background: none;
+                    border: none;
+                    color: #fff;
+                    outline: none;
+                }
+
+                .bio-input::placeholder {
+                    color: silver;
+                }
+            }
+
+            .username {
+                display: flex;
+                flex-direction: column;
+                padding: 0px 102px;
+
+                .username-text {
+                    color: #6AB3F3;
+                    font-size: 16px;
+
+                }
+
+                .username-text:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+
+                .text {
+                    font-size: 15px;
+                    color: silver;
+                }
+            }
+
+            .number {
+                display: flex;
+                gap: 60px;
+                padding: 0px 20px;
+
+                .phone {
+                    display: flex;
+                    flex-direction: column;
+                    color: #FFF;
+                }
+
+                .mobile {
+                    font-size: 15px;
+                    color: silver;
+                }
+
+                .info-icon {
+                    color: #FFF;
+                    font-size: 24px;
+                }
+            }
+
+
+        }
+
+        .header {
+            flex-direction: column;
+            display: flex;
+            gap: 10px;
+
+            .top {
+                margin-top: 10px;
+
+                .icons {
+                    display: flex;
+                    gap: 20px;
+                    font-size: 22px;
+                    z-index: 2;
+
+                    .call-icon {
+                        color: rgb(202, 202, 202);
+                    }
+
+                    .call-icon:hover {
+                        color: #FFF;
+                        cursor: pointer;
+
+                    }
+
+                    .more-btn {
+                        color: rgb(202, 202, 202);
+                    }
+
+                    .more-btn:hover {
+                        color: #FFF;
+                        cursor: pointer;
+                    }
+                }
+
+                display: flex;
+                width: 100%;
+                color: #FFF;
+                font-size: 20px;
+                justify-content: space-between;
+            }
+
+            .bottom {
+                display: flex;
+                gap: 20px;
+
+                img {
+                    width: 75px;
+                    height: 75px;
+                }
+
+                .name-status {
+                    color: #FFF;
+                    display: flex;
+                    margin-top: 5px;
+                    flex-direction: column;
+
+                    .names {
+                        font-size: 23px;
+                    }
+
+                    .status {
+                        font-size: 12px;
+                        color: silver;
+                    }
+                }
+            }
+
+
+            .close-button {
+                font-size: 22px;
+                z-index: 2;
+                color: rgb(202, 202, 202);
+            }
+
+            .close-button:hover {
+                font-size: 22px;
+                cursor: pointer;
+                color: #FFF;
+            }
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+
+            .block-user {
+                padding: 5px 20px;
+                color: #FF1331;
+                display: flex;
+                gap: 55px;
+                line-height: 1.3125;
+            }
+
+            .block-user:hover {
+                padding: 5px 20px;
+                color: #FF1331;
+                cursor: pointer;
+                background: #44576b;
+                display: flex;
+                gap: 55px;
+                line-height: 1.3125;
+            }
+
+            .block-icon {
+                font-size: 22px;
+            }
+        }
+    }
+
+    @keyframes isOpen {
+        from {
+            transform: translateY(-100%);
+            opacity: 0.25;
+        }
+
+        to {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+
+    .hr {
+        height: 2px;
+        width: 100%;
+        background: silver;
+    }
+
+}

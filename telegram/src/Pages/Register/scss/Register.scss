@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Register {
+    background-image: url('../../../img/download.png');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .inputs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .form {
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+
+            .submit-btn {
+                border: 2px solid #24b4fb;
+                background-color: #24b4fb;
+                border-radius: 0.9em;
+                padding: 0.8em 1.2em 0.8em 1em;
+                transition: all ease-in-out 0.2s;
+                font-size: 16px;
+
+                span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    font-weight: 600;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+                &:hover {
+                    background-color: #0071e2;
+                }
+
+            }
+
+            .file-input {
+                cursor: pointer;
+
+                .text {
+                    font-size: 22px;
+                }
+
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            outline: none;
+            background-color: #4070da;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #166397;
+        }
+    }
+}

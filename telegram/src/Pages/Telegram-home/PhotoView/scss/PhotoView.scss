@@ -1,0 +1,34 @@
+.PhotoView {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    padding: 100px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 1, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .image {
+        z-index: 2;
+    }
+
+    .PhotoView-downlaod-icon {
+        position: absolute;
+        top: 10px;
+        right: 50px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .PhotoView-close-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+}
